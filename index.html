@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        label {
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title><h1>GoogleSearching</h1></title>
+</head>
+<body>
+      <form action="https://www.google.com/search?" target="_blank"> 
+          <label for="q">Search Text:</label>
+          <input type="text" id="q" name="q" placeholder="enter text">
+          <label for="as_qdr">Thats Was Updating In:</label>
+          <select id="as_qdr" name="as_qdr">
+              <option value="d">Any Time</option>
+              <option value="d">Previous 24 Hours</option>
+              <option value="w">Previous Seven Days</option>
+              <option value="m">Previous a month</option>
+              <option value="y">Previous a year</option>
+          </select>
+          <label for="lr">Search Onliy Pages Written In Hebrow</label>
+          <input type="checkbox" id="lr" name="lr" value="lang_iw">
+          <label for="num">Number Of Result:</label>
+          <input type="number" id="num" name="num" placeholder="enter n" min="0" max="100" required>
+          <input type="submit" value="ask google" style="color: green;border-radius: 12px;">
+      </form> 
+</body>
+</html>
